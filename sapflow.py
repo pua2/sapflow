@@ -25,6 +25,8 @@ df_outer = merged.drop("inner_sapflow", axis=1)
 df_inner = merged.drop("outer_sapflow", axis=1)
 
 merged.to_csv(f'{path}merged.csv', index =False)
+df_outer.to_csv(f'{path}df_outer.csv', index =False)
+df_inner.to_csv(f'{path}df_inner.csv', index =False)
 
 #weather_csv.to_csv("weather.csv", index =False)
 #sapflow_csv.to_csv("sapflow.csv", index =False)
